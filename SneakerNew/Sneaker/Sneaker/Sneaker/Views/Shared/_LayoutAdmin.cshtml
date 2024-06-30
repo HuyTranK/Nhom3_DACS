@@ -1,0 +1,109 @@
+﻿@using System.Web.Optimization
+@using Sneaker.Models
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Superstar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/Assets/Customer/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Assets/Customer/css/style.css">
+</head>
+<body class="goto-here">
+    <div class="py-1 bg-black">
+        <div class="container">
+            <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+                <div class="col-lg-12 d-block">
+                    <div class="row d-flex">
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+                            <span class="text">+84 8212 6501</span>
+                        </div>
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+                            <span class="text">rxgesomeone@gmail.com</span>
+                        </div>
+                        <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+                            <span class="text">Giao hàng nhanh & Đổi trả miễn phí</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">Superstar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="@Url.Action("DonDatHang", "Admin")">Đơn hàng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("SanPham", "Admin")">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("ThuongHieu", "Admin")">Thương hiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("KhachHang", "Admin")">Khách hàng</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody();
+
+    <footer class="ftco-footer ftco-section bg-dark text-white">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Superstar</h2>
+                        <p>Superstar là nơi đáng tin cậy để mọi người đặt lòng tin.</p>
+                        <ul class="ftco-footer-social list-unstyled mt-5">
+                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Menu</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">Shop</a></li>
+                            <li><a href="#" class="py-2 d-block">About</a></li>
+                            <li><a href="#" class="py-2 d-block">Journal</a></li>
+                            <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Help</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
+                            <li><a href="#" class="py-2 d-block">Returns & Exchange</a></li>
+                            <li><a href="#" class="py-2 d-block">Terms & Conditions</a></li>
+                            <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
+                            <li><a href="#" class="py-2 d-block">FAQs</a></li>
+                            <li><a href="#" class="py-2 d-block">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Về chúng tôi</h2>
+                        <ul class="list-unstyled">
+                            <li><span class="icon icon-map-marker"></span><span class="text">An Phú Đông, Quận 12, TP. Hồ Chí Minh</span></li>
+                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">+84 8212 6501</span></a></li>
+                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">superstar@gmail.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/Assets/Customer/js/jquery.min.js"></script>
+    <script src="~/Assets/Customer/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
